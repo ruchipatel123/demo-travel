@@ -5,7 +5,7 @@ import { use } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
-import { StarIcon, MapPinIcon, CalendarIcon, UserIcon, XMarkIcon, ClockIcon, ArrowLongRightIcon } from '@heroicons/react/24/solid';
+import {  XMarkIcon } from '@heroicons/react/24/solid';
 import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 import LoginModal from '@/components/LoginModal';
 import PaymentModal from '@/components/PaymentModal';

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { use } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { StarIcon, MapPinIcon, CalendarIcon, UserIcon, WifiIcon, TvIcon, HomeIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import { StarIcon, MapPinIcon, WifiIcon,  XMarkIcon } from '@heroicons/react/24/solid';
 import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 import Navbar from '@/components/Navbar';
 import LoginModal from '@/components/LoginModal';

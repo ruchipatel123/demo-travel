@@ -1,9 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import { ClockIcon, ArrowLongRightIcon } from '@heroicons/react/24/solid';
 import Navbar from '@/components/Navbar';
 
 // Mock data for trains

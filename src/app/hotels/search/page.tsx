@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -69,8 +69,8 @@ export default function HotelSearchResults() {
     }));
   };
 
-  const applyFilters = () => {
-    let filteredHotels = mockHotels;
+  const applyFilters = useCallback(() => {
+    let filteredHotels = hotels;
 
     // Apply price filter
     filteredHotels = filteredHotels.filter(
@@ -85,13 +85,13 @@ export default function HotelSearchResults() {
     }
 
     setHotels(filteredHotels);
-  };
+  }, [filters, hotels]);
 
   useEffect(() => {
     if (mounted) {
       applyFilters();
     }
-  }, [filters, mounted]);
+  }, [mounted, applyFilters]);
 
   if (!mounted) {
     return null;

@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
-import { ClockIcon, ArrowLongRightIcon, AdjustmentsHorizontalIcon } from '@heroicons/react/24/outline';
+import {  ArrowLongRightIcon, AdjustmentsHorizontalIcon } from '@heroicons/react/24/outline';
 import Navbar from '@/components/Navbar';
 
 // Mock train data
