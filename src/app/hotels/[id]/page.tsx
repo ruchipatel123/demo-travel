@@ -44,7 +44,6 @@ export default function HotelDetail({ params }: { params: Promise<{ id: string }
   const [selectedDates, setSelectedDates] = useState({ checkIn: '', checkOut: '' });
   const [showBookingModal, setShowBookingModal] = useState(false);
   const [bookingConfirmed, setBookingConfirmed] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showPaymentModal, setShowPaymentModal] = useState(false);
   const { user, login } = useAuth();

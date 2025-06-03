@@ -105,7 +105,7 @@ export default function FlightSearchResults() {
   const departDate = searchParams.get('departDate');
   const passengers = searchParams.get('passengers') ? JSON.parse(searchParams.get('passengers')!) : null;
 
-  const handleFilterChange = (filterType: keyof FlightFilters, value: any) => {
+  const handleFilterChange = (filterType: keyof FlightFilters, value: number[] | [number, number] | string[]) => {
     setFilters(prev => ({
       ...prev,
       [filterType]: value,
@@ -158,7 +158,7 @@ export default function FlightSearchResults() {
     if (mounted) {
       applyFilters();
     }
-  }, [filters, mounted]);
+  }, [filters, mounted, applyFilters]);
 
   if (!mounted) {
     return null;
